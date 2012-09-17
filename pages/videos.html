@@ -1,3 +1,18 @@
+<?php
+  ## Utility function to render DOM for $.tubeplayer/$.tools.scrollable integration
+  ## @param $ytid video id of a youtube video
+  function addVideoScrollableItem($ytid) {
+    $ret = "";
+    $ret = $ret . "<div>\n";
+    $ret = $ret . "  <a href=\"javascript:void(0)\" onClick=\"\$('#bbplayer-video').tubeplayer('play', '$ytid')\">\n";
+    $ret = $ret . "    <img src=\"http://img.youtube.com/vi/$ytid/default.jpg\" />\n";
+    $ret = $ret . "  </a>\n";
+    $ret = $ret . "</div>\n";
+
+    echo($ret);
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
