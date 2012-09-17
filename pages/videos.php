@@ -18,12 +18,12 @@
 <head>
   <title>Videos for My Band</title>
 
-  <link rel='stylesheet' type='text/css' href='/static/css/bbplayer.css' />
+  <link rel='stylesheet' type='text/css' href='../static/css/bbplayer.css' />
 
-  <script type='text/javascript' src='/static/js/vendor/jquery-1.8.0.min.js'></script>
-  <script type='text/javascript' src='/static/js/vendor/jquery.tools-wepanlen.min.js'></script>
-  <script type='text/javascript' src='/static/js/vendor/jquery.tubeplayer.js'></script>
-  <script type='text/javascript' src='/static/js/vendor/swfobject.min.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/jquery-1.8.0.min.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/jquery.tools-wepanlen.min.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/jquery.tubeplayer.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/swfobject.min.js'></script>
 </head>
 <body>
   <!-- bandbase video player -->
