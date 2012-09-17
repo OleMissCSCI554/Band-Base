@@ -43,5 +43,23 @@
       <a class='next browse right'></a>
     </div>
   </div>
+  <script type='text/javascript'>
+    /*global $, document*/
+    $(document).ready(function () {
+        "use strict";
+
+        $("#bbplayer-video").tubeplayer({
+            width: 425,
+            height: 225,
+            initialVideo: "9bZkp7q19f0",
+            showControls: false,
+            annotations: false
+        });
+
+        $("#bbplayer-select").scrollable({
+            size: 5
+        });
+    });
+  </script>
 </body>
 </html>
