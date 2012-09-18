@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* 	CSS Document 
+	Course: Csci 554 - Web Architecture and Programming	
+	Student Name: Giwoo Lee
+	UM ID: 10453305
+*/
+
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* Body */
+body {
+	background:#000;
+	color: #000;
+	font: 0.8em Arial, Helvetica, sans-serif;
+}
+
+
+/* Header */
+#header {
+	background:#f4f4f5;
+	height:80px;
+	margin:40px auto;
+	width:850px;
+}
+
+#header img {
+	color:#000;
+	font-size:300%;
+	letter-spacing:2px;
+	text-align:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+
+#content {
+	background:#f4f4f5;
+	height: 400px;
+	margin: -40px auto;
+	width: 850px;
+}
+
+#content .box {
+	background:#a0b099;
+	height: 150px;
+	width: 250px;
+	float: right;
+	padding: 20px;
+	margin-right: 120px; 
+	moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#content .box .text {
+	margin-left: 5px;
+	width: 80px;
+	float:left;
+}
+
+#content .box .text p {
+	margin-top: 15px;
+	font: 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:left;		
+}
+
+#content .box .input{	
+	width: 140px;
+	float:left;
+	margin-left:5px;
+}
+
+#content .box .input input{	
+	margin-top: 17px;
+}
