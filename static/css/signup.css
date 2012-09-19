@@ -1,0 +1,46 @@
+/*
+ * HTML5 CSS SignUp
+ *
+ */
+
+/* ==========================================================================
+   Basic styles
+   ========================================================================== */
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+	background-color: black;
+	padding: 1em;
+	height:100%;
+	padding-bottom:40px;   /* Height of the footer */
+}
+
+header {
+    background-color: black;
+}
+content {
+    background-color: black;
+	position: relative;
+	color: white;
+  	font-size: 3em;
+	padding: 1em;
+	margin: 1em;
+}
+
+footer {
+	position:absolute;
+   	bottom:0;
+   	height:40px;   /* Height of the footer */
+}
+footer ul li {
+    background-color: black;
+	color: white;
+	font-size: 1em;
+    display:inline-block; 
+    *display:inline; 
+    zoom:1;     
+}
