@@ -1,0 +1,123 @@
+#bbplayer {
+    height:350px;
+
+    /* Attach the widget to the bottom of the screen */
+    position:absolute;
+    bottom:0px;
+
+    /* Hack center absolute positioned divs horizontally */
+    width:850px;
+    left:50%;
+    margin-left:-425px;
+}
+
+#bbplayer #bbplayer-content #bbplayer-title {
+    width:90px;
+    height:215px;
+    padding-left:10px;
+    padding-top:10px;
+    float:left;
+    text-transform:uppercase;
+}
+
+#bbplayer #bbplayer-content #bbplayer-video {
+    width:425px;
+    height:225px;
+    float:left;
+}
+
+#bbplayer #bbplayer-content #bbplayer-description {
+    width:315px;
+    height:185px;
+    padding-left:10px;
+    padding-top:40px;
+    float:left;
+}
+
+#bbplayer #bbplayer-content #bbplayer-description * {
+    margin:0;
+}
+
+#bbplayer #bbplayer-controlribbon {
+    width:850px;
+    height:110px;
+    position:absolute;
+    bottom:0px;
+    background-color:black;
+}
+
+#bbplayer #bbplayer-controlribbon a.prev,
+#bbplayer #bbplayer-controlribbon a.next {
+    width:30px;
+    height:30px;
+    margin-top:40px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:40px;
+    display:block;
+    float:left;
+    background:url(../img/hori_large.png) no-repeat;
+    cursor:pointer;
+
+    /* Hack to keep anchor from collapsing on some browsers */
+    font-size:1px;
+}
+
+#bbplayer #bbplayer-controlribbon a.prev {
+    clear:left;
+}
+
+#bbplayer #bbplayer-controlribbon a.prev:hover  {
+    background-position:-30px 0;
+}
+
+#bbplayer #bbplayer-controlribbon a.prev:active {
+    background-position:-60px 0;
+}
+
+#bbplayer #bbplayer-controlribbon a.next {
+    background-position:0 -30px;
+    clear:right;
+}
+
+#bbplayer #bbplayer-controlribbon a.next:hover {
+    background-position:-30px -30px;
+}
+
+#bbplayer #bbplayer-controlribbon a.next:active {
+    background-position:-60px -30px;
+}
+
+#bbplayer #bbplayer-controlribbon a.disabled {
+    background-image:none !important;
+}
+
+#bbplayer #bbplayer-controlribbon #bbplayer-select {
+    width:750px;
+    height:110px;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+
+#bbplayer #bbplayer-controlribbon #bbplayer-select .videos {
+    /* Hack extremely large width to accomodate selections; this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+#bbplayer #bbplayer-controlribbon #bbplayer-select .videos div {
+    width:150px;
+    float:left;
+}
+
+#bbplayer #bbplayer-controlribbon #bbplayer-select img {
+    width:100px;
+    height:75px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    margin:20px 5px 20px 21px;
+    float:left;
+}
+
