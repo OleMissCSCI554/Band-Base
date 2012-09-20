@@ -28,7 +28,7 @@ body {
 	float:left;
 	width: 100%;
 	height:300px;
-	border-left: #231f20 solid 15%;
+	
 	
 
 }
@@ -52,11 +52,7 @@ background-color:#b1baa6;
 	  margin:0;
     
 }
-#header{
-	width:100%;
-	height:80px;
-	background-color:#b1baa6;
-}
+
 .box4{
 	float: left;
 	width: 30%;	
@@ -87,7 +83,3 @@ background-color:#b1baa6;
 	
 }
 
-.footer {
-	padding: 10px 0;
-	background-color:  #b1baa6;
-}
