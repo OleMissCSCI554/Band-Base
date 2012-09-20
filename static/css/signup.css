@@ -24,7 +24,7 @@ header {
 	font-size: 3em;
 	padding: 40px;
 }
-content {
+#content {
     background-color: black;
 	position: relative;
 	width: ;
@@ -32,7 +32,7 @@ content {
 	padding: 1em;
 }
 
-content intro {
+#content #intro {
 	background: white;
 	color: black;
 	height: 1em;
@@ -45,11 +45,11 @@ content intro {
 	border-radius: 15px;
 }
 
-content signup {
+#content #signup {
 	float: left;
 }
 
-content box {
+#content .box {
 	background: white;
 	color: black;
 	height: 150px;
@@ -63,7 +63,7 @@ content box {
 	border-radius: 15px;
 }
 
-content btn {
+#content #btn {
 	background: white;
 	color: black;
 	height: 1em;
