@@ -1,0 +1,427 @@
+body,td,th {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+body {
+	background-color:#ebeff2; 
+	margin:0;
+}
+#container { /* Added next two lines to solve wider content issues */
+	position:relative;
+	float:left;
+}
+#page {
+	width: 98%; 
+	border:2px ridge; 
+	background-color: white;
+}
+
+
+/*
+			#header {
+			}
+			#masthead {
+				background-image:url(banner.gif);
+				background-repeat:repeat-x;
+				height:40px;
+				padding:10px;
+				color:white;
+			}
+			#logo {
+				float:left;
+				font-style:italic;
+				font-weight:bold;
+				font-size:30px;
+				padding-top:10px;
+			}
+			#welcome {
+				margin-left:200px;
+				float:left;
+				margin-top:20px;
+			}
+			#globallinks {
+				float:right;
+				margin-top:20px;
+			}
+			#globallinks a {
+				color:white;
+				font-size:12px;
+				padding-left:20px;
+			}
+			#globallinks a:hover,
+			#globallinks a:active {
+				color:#FF3300;
+			}
+			#toolarea {
+				width:100%;
+				clear:both;
+				height: 22px;
+				border:1px none black;
+				background-color:#e8edf0;
+			}
+			#toolarea select{
+				float: right;
+				height:20px;
+				font-size:10px;
+				width:100px;
+			}
+			#menues {
+				clear:both;
+				background-color:#e8edf0;
+				height:30px;
+				font-size:13px;
+				width:100%;
+			}
+*/
+#pagetoolbar{
+	background-color:#ebeff2;
+	font-size:24px;
+	padding:4px 12px 12px 12px;
+	font-weight: bold;
+}
+
+#menulist ul {
+	list-style:disc;
+}
+#menulist li {
+	margin-left:30px;
+	margin-bottom:5px;
+}
+#menulist li a {
+	padding:5px;
+}
+#menulist li a:hover,
+#menulist li a:active {
+	background-color:#0066CC;
+	color:white;
+}
+#information {
+	padding: 1em;
+	background-color: white;
+	/*overflow:auto;*/
+}
+.emphasis1 {
+	font-weight: bold;
+	color: #FF0000;
+}
+.emphasis2 {
+	font-weight: bold;
+	color: #000000;
+}
+.smallfont {
+	font-size: 12px;
+}
+.name {
+	text-transform: capitalize;
+}
+div.notes {
+	background-color: #FFFFCC;
+	border-top:2px solid #FFFF99;
+	border-left:2px solid #FFFF99;
+	border-right:2px solid #FFCC33;
+	border-bottom:2px solid #FFCC33;
+	padding:5px;
+	font-size: 11px;
+	margin-left: 30px;
+	width:auto;
+	float:none;
+}
+div.notes li {
+	margin: 0px;
+	padding: 0px;
+}
+form.formwithnotes .field {
+	clear: left;
+	width: 500px;
+}
+div.notes li.chosenitem {
+	color: #FF0000;
+}
+#information ul.indent li {
+	margin-left: 60px;
+}
+div.block {
+	float: left;
+	width: 250px;
+	font-size: 12px;
+	border: 2px solid #cccccc;
+	margin: 15px;
+}
+div.block .blockheading {
+	font-weight: bold;
+	color: #000000;
+	background-color: #CCCCCC;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+div.block .blockchange {
+	float: right;
+}
+.block .field .fieldname {
+	float: left;
+	width: 75px;
+	text-align: right;
+}
+h3.classes,
+h3.waitlist,
+h3.favorites {
+	margin-left:25px;
+	margin-top: 24px;
+	clear:both;
+}
+table.classschedule {
+	width:95%;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-top: 5px solid green;
+}
+table.waitlist {
+	width:95%;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-top: 5px solid blue;
+}
+table.favorites {
+	width:95%;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-top: 5px solid gold;
+}
+table.favorites td,
+table.classschedule td,
+table.waitlist td {
+	white-space:normal;
+}
+#generated {
+	position:relative;
+	font-size:12px;
+	font-style:italic;
+	margin-bottom:24px;
+	display:block;
+}
+#reggenerated {
+	font-size:12px;
+	font-style:italic;
+	margin-bottom:24px;
+	display:block;
+	text-align:right;
+	color:#696969;
+}
+.schedulehead td {
+	font-size:13px;
+	color: black;
+	text-align:center;
+	border: 1px solid #cccccc;
+}
+.schedule td {
+	text-align: center;
+	border: 1px solid #cccccc;
+	font-size:10px;
+	white-space:nowrap;
+}
+.noborders td,
+table.noborders {
+	border:none;
+}
+div.regheader {
+	width:auto;
+	float:none;
+	margin: 0 0 24px 24px;
+}
+#border {
+border-radius: 10px 10px 10px 10px;
+} 
+div.syserror {
+	border: 12px solid red;
+	padding: 6px;
+	margin: 24px;
+	color: black;
+	font-weight: normal;
+}
+div.error {
+	/*border-left: 18px solid red;*/
+	background-image:url(/irj/go/km/docs/documents/UMImages/redx.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left: 36px;
+	margin: 5px 24px;
+	color: red;
+	font-weight: normal;
+}
+div.success {
+	/*border-left: 18px solid green;*/
+	background-image:url(/irj/go/km/docs/documents/UMImages/greencheck.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left: 36px;
+	margin: 5px 24px;
+	color: green;
+	font-weight: normal;
+}
+div.note {
+	/*border-left: 18px solid blue;*/
+	background-image:url(/irj/go/km/docs/documents/UMImages/bluebang.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left: 36px;
+	margin: 5px 24px;
+	color: blue;
+	font-weight: normal;
+}
+#reglinks {
+	clear:both;
+	width: 760px;
+	text-align: center;
+	margin: 24px 0 24px 24px;
+}
+#reglinks2 {
+		clear:both;
+text-align: left;
+	margin: 24px;
+}
+#reglinks input, #reglinks input[type="submit"], #reglinks input[type="reset"], #reglinks input[type="button"], #reglinks button,
+#reglinks2 input, #reglinks2 input[type="submit"], #reglinks2 input[type="reset"], #reglinks2 input[type="button"], #reglinks2 button,
+input.finaid {
+	margin: 0 6px 6px 0;
+	color: blue;
+	/*width: 160px;*/
+	font-size: 13px;
+	font-weight:bold;
+	/*text-decoration:underline;*/
+	white-space: nowrap;
+	text-align: center;
+	padding: 3px;
+	border: 1px solid #cccccc;
+	background-color:#cee8ff;
+	border:1px solid #333333;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#cee8ff');
+}
+input.finaid {
+	float:right;
+}
+#reglinks input[type="Submit"],#reglinks  input[type="Seset"],#reglinks  input[type="Sutton"],#reglinks  button, {
+	/*margin: 0 6px 6px 0;*/
+	color: blue;
+	font-size: 13px;
+	font-weight:bold;
+	/*width: 160px;*/
+	white-space: nowrap;
+	text-align: center;
+	padding: 3px;
+	border: 1px solid #cccccc;
+	background-color:#cee8ff;
+	border:1px solid #333333;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#cee8ff');
+}
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover {
+	color: #FF0000;
+	background-color:#ffffff;
+}
+#reglinks input {
+	width: 175px;
+}
+#reglinks2 input {
+	/*width: 250px;*/
+}
+#reglinks input:hover,
+#reglinks2 input:hover {
+	color: #FF0000;
+	background-color: #FFFFFF;
+}
+.fineprint {
+	font-size: 10px;
+	color: #000000;
+	padding: 10px;
+	width: 730px;
+	margin: 24px;
+	border: 1px solid #cccccc;
+}
+.highlighted {
+	background-color: #FFFFdd;
+	font-weight: bold;
+}
+tr.rowodd {
+	background-color:#CCFFFF;
+}
+tr.roweven {
+	background-color:#ffffff;
+}
+.smallprint {
+	font-size:11px;
+}
+select.link {
+	float:right;
+}
+#footer a:link,
+#footer a:visited {
+	color:white;
+}
+select option { // Fixes Firefox dropdown menu width issue
+	padding-right:.5em;
+}
+.field .mdy, .mdy {
+	font-size:smaller;
+	font-weight:normal;
+}
+
+.newwin {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-style: italic;
+        }
+
+.closewin {
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-style: italic;
+        }
+
+img.middle {vertical-align:middle}
+input.navbtn {
+	padding:0;
+	background-color:#99ccff;
+	border:0;
+	color:black;
+	width:auto;
+	text-decoration:underline;
+    padding: 0 .25em;
+    width: 0;  /* IE table-cell margin fix */
+    overflow: visible;
+	cursor:pointer;
+	margin-right:10px;
+}
+input.navbtn[class] {  /* IE ignores [class] */
+    width: auto;  /* cancel margin fix for other browsers */
+}
+input.navbtn:hover {
+	background-color:#efefef;
+	text-decoration:underline;
+	color:black;
+}
+.topmnu {
+	width:98%;
+	margin: 0 1% 10px 1%;
+	padding:3px;
+	border:1px solid black;
+	background-color:#99ccff;
+	font-size:12px;
+}
+.instructions {
+	margin-left:24px;
+	font-size:12px;
+}
+.required {
+	font-weight:bold;
+	color:#cc0000;
+}
+
+
+@media print {
+      .noprint { display: none; }
+}
