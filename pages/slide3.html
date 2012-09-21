@@ -4,138 +4,185 @@
 <head>
     <style type="text/css">
       
-a:link {color:rgb(230,244,245);}    /* unvisited link */
+a:link {color:rgb(230,244,245); padding-right:15px;}    /* unvisited link */
 a:visited {color:#00FF00;} /* visited link */
 a:hover {color:#FF00FF;}   /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */
+a:active {color:#0000FF; }  /* selected link */
 a{text-decoration: none}
 a{font-size: medium}
 
 p.p1{
     color : rgb(145,176,149);
+    font-size: 21%;
+    font-weight: bold;    
 }
-p.p2{
-    display: inline;
-    
+.p2{
+   color : rgb(145,176,149);
+   font-size: 40%;   
+   vertical-align: middle;   
 }
 h1{    
-font: 35px/40% arial,sans-serif;
+font: 85px/40% arial,sans-serif;
 font: 900%;
 position: absolute;
 top: 30%;
-left: 40%;
+left: 30%;
 color: #FFFFFF;
-text-align: center;
-}
-h3{
-    color : rgb(145,176,149);
+min-width: 750px;
+font-weight: bold;
+
 }
 h2{
 font: 17px/50px arial;
 text-align: justify;
 display: inline;
+font-weight: bold;
 color:rgb(230,244,245);
 }
 body
 {
-background-color: black;    
+background-color: black;
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.container{
+    width: 1180px;
+    height: 700px;
+    height: auto;
+    margin: 0;
+    padding: 0;  
+    
 }
 
   
 input[type="text"]
 {
-width:auto;
+width:290px;
+height: 40px;
 display: block;
-font-size: medium;
+font-size: small;
+font-weight: bold;
 margin-bottom:10px;
 background-color:rgb(244,244,245);
 padding: inherit;
-margin-left:  20%;
-color: 
+border: none;
+margin-left:  33%;
+color: #000000;
+
 
 }
 
 .ex1{
+position: static;
+margin-top: 8%;
 
 text-align: right;
 color : rgb(145,176,149);
 font-size: small;
+font-weight: bold;
 }
 
  .ex  [type="text"]
 {
-width:auto;
+width:290px;
+height: 40px;
 display: block;
-font-size: medium;
+font-size: small;
+font-weight: bold;
 margin-bottom:10px;
 background-color:rgb(244,244,245);
 padding: inherit;
-margin-left:  20%;
-border-top-left-radius:  8px;
-border-top-right-radius: 8px;
+margin-left:  33%;
+border-top-left-radius:  12px;
+border-top-right-radius: 12px;
+border: none;
+color: #000000;
+
 }
  .ex2 [type="text"]
 {
-width:auto;
+width:290px;
+height: 40px;
 display: block;
-font-size: medium;
+font-size: small;
+font-weight: bold;
 margin-bottom:10px;
 background-color:rgb(244,244,245);
 padding: inherit;
-margin-left:  20%;
-border-bottom-left-radius:  8px;
-border-bottom-right-radius: 8px;
+margin-left:  33%;
+border-bottom-left-radius:  12px;
+border-bottom-right-radius: 12px;
+border: none;
+color: #000000;
+
+}
+.ex3{
+width:220px;
+padding:10px;
+color: rgb(145,176,149);
+border:none;
+margin-bottom: 0px;
 }
 input[type="button"]
 {
 width:auto;
+height: 35px;
 left: inherit
 display:block;
+background: white;
+border: none;
+color: black;
+font-weight: bold;
 }
 
 </style>
-<script>    
-onresize=onload=function(){document.body.style.fontSize=window.innerWidth+"px"; document.body.style.input=window.innerWidth+"px"}
-</script>
+
     <title>BB slide 3</title>
 </head>
 
 
 <body >
+    <div class="container">
     <div class= "ex1">
      ALREADY A MEMBER
     <input type="button" value="SIGN IN"> </div>
               
-    <p ><h1 style="font-size:5%" >BAND BASE 
-    <p class="p1" style="font-size:20%"> A GUIDE TO YOUR LOCAL MUSIC COMMINUTY</p>
+    <p ><h1>BAND <span class="p2">&bull; </span>  BASE
     
-    <p style="font-size:1%">
+    <p class="p1">&bull; A GUIDE TO YOUR LOCAL MUSIC COMMINUTY &bull;</p>
+    
+    
         
     <div class="ex">
         <form  action="" method="get">
-            <input  type="text" name="first" value="FIRST NAME" size="20"></form></div>
+            <input  type="text" name="first" placeholder="FIRST NAME" size="20"></form></div>
     
     <form name="input" action="" method="get">
-        <input  type="text" name="last" value="LAST NAME" size="20">
-        <input type="text" name="email" value="EMAIL ADDRESS" size="20">
+        <input  type="text" name="last" placeholder="LAST NAME" size="20">
+        <input type="text" name="email" placeholder="EMAIL ADDRESS" size="20">
     <div class="ex2">
-        <input type="text" name="password" value="PASSWORD" size="20"></div>
+        <input type="text" name="password" placeholder="PASSWORD" size="20"></div>
         
         <input type="button" value="SIGN UP"></p>    
       
         <h2>
-        <p class="p2"><a href="default.asp" target="_blank">ABOUT</a>
-        <p class="p2"><a href="default.asp" target="_blank">TERMS</a>
-        <p class="p2"><a href="default.asp" target="_blank">PRIVACY</a>
-        <p class="p2"><a href="default.asp" target="_blank">HELP</a>
-        <p class="p2"> COPYRIGHT
-        <p class="p2"> 2012
-        <p class="p2"> BANDBASE ALL RIGHTS RESERVED</h2></p></h1>
+    
+        <a href="default.asp" target="_blank">ABOUT
+        <a href="default.asp" target="_blank">TERMS
+        <a href="default.asp" target="_blank">PRIVACY
+        <a href="default.asp" target="_blank">HELP</a>
+         COPYRIGHT
+         2012
+         BANDBASE ALL RIGHTS RESERVED</h2></h1>
+        <div class="ex3">fffff</div>
         
         
     
         
    
-</form>
+</form></div>
 </body>
 </html>
