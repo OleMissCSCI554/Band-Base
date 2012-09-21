@@ -4,150 +4,164 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>BAND VIDEOS</title>
 <style type="text/css">
-.header table{
-	width:950px;
-	background-color:#a0b095;
-	border-width:0;
+.header table {
+    width:950px;
+    background-color:#a0b095;
+    border-width:0;
 }
-.header th,td {border-width:0;}
+
+.header th,
+.header td {
+    border-width:0;
+}
 
 .header_right {
-	text-align:bottom;
-	color: #FFF;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
-	background-color:#a0b095;
-	padding-top:25px;
-	width:108px;
-	height:19px;
-	border:0;
+    text-align:bottom;
+    color:#FFF;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:14px;
+    background-color:#a0b095;
+    padding-top:25px;
+    width:108px;
+    height:19px;
+    border:0;
 }
 
-.header_left{
-	text-align: center;
-	font-family: Verdana, Geneva, sans-serif;
-	color: #FFF;
-	font-size: 36px;
-	background-color:#a0b095;
-	width:604px;
-	height:44px;
+.header_left {
+    text-align:center;
+    font-family:Verdana, Geneva, sans-serif;
+    color:#FFF;
+    font-size:36px;
+    background-color:#a0b095;
+    width:604px;
+    height:44px;
 }
-.band_info table{
-	background-color: #eaeaea;
-	width:950px;
-	height:81px;
-	
+
+.band_info table {
+    background-color:#eaeaea;
+    width:950px;
+    height:81px;
 }
 
 .band_info_mybands {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 24px;
-	width:134px;
-	color:#a0b095;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:24px;
+    width:134px;
+    color:#a0b095;
 }
-.band_info_name{
-	height:31px;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 18px;
-	position: relative;
-	left: 0px;
-	top: 0px;
+
+.band_info_name {
+    height:31px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:18px;
+    position:relative;
+    left:0px;
+    top:0px;
 }
-.band_info_rewiew{
-	
-	width:487px;
-	height:31px;
+
+.band_info_rewiew {
+    width:487px;
+    height:31px;
 }
-.band_info_image{
-	width:70px;
-	
+
+.band_info_image {
+    width:70px;
 }
-.band_info_intro{
-	width:70px;
-	
+
+.band_info_intro {
+    width:70px;
 }
-.band_info_comment{
-	width: 200px;
-	
+
+.band_info_comment {
+    width:200px;
 }
 
 .band_info_mybands_p {
-	font-size: 24px;
-	background-color: #FFF;
-	text-align: center;
-	width: 150px;
+    font-size:24px;
+    background-color:#FFF;
+    text-align:center;
+    width:150px;
 }
 
 .big_video table {
-	background-color: #eaeaea;
-	width:950px;
+    background-color:#eaeaea;
+    width:950px;
 }
-
 
 .footer table {
-	background-color: #eaeaea;
+    background-color:#eaeaea;
 }
+
 .band_videos table {
-	font-family: Verdana, Geneva, sans-serif;
-	background-color: #f4f4f5;
+    font-family:Verdana, Geneva, sans-serif;
+    background-color:#f4f4f5;
 }
+
 .band_videos table tr .band_videos_name {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 24px;
-	text-align: center;
-	vertical-align: middle;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:24px;
+    text-align:center;
+    vertical-align:middle;
 }
+
 .big_video{
-	width:95%;
-	height:89%;
-	border:10px solid black;
-	background-color:#FFF;
-	}
-.band_videos_table2 table  {
-	background-color: #000;
-	height:100 px !important;
-	}
+    width:95%;
+    height:89%;
+    border:10px solid black;
+    background-color:#FFF;
+}
+
+.band_videos_table2 table {
+    background-color:#000;
+    height:100 px !important;
+}
+
 tr .band_videos_arrow {
-	width: 10%;
-	text-align: center;
+    width:10%;
+    text-align:center;
 }
+
 tr .band_videos_small_img {
-	width: 70%;
-	height:89%;
-	border:10px solid white;
-	background-color:#000;
+    width:70%;
+    height:89%;
+    border:10px solid white;
+    background-color:#000;
 }
+
 tr .band_videos_small {
-	height: 70px;
-	width: auto;
+    height:70px;
+    width:auto;
 }
+
 .bang_gigs table {
-	background-color: #eaeaea;
-	width:950px;
+    background-color:#eaeaea;
+    width:950px;
 }
+
 .bang_gigs table tr .band_gigs_1 {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 24px;
-	background-color: #000;
-	color: #eaeaea;
-	text-align: center;
-	padding-right: 10%;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	background-color:#000;
+	color:#eaeaea;
+	text-align:center;
+	padding-right:10%;
 }
+
 .bang_gigs table tr .band_gigs_2 {
-	font-family: Verdana, Geneva, sans-serif;
-	text-align: right;
-	font-size: 12px;
-	font-weight: bold;
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:right;
+	font-size:12px;
+	font-weight:bold;
 }
+
 .bang_gigs table tr .band_gigs_4 {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 19px;
-	text-align: right;
-	font-weight: bold;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:19px;
+    text-align:right;
+    font-weight:bold;
 }
 </style>
 </head>
-
 <body>
 <div class="header">
 <table width="952" >
@@ -241,7 +255,5 @@ tr .band_videos_small {
   </tr>
 </table>
 </div>
-
-
 </body>
 </html>
