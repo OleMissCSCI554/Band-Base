@@ -1,4 +1,4 @@
-﻿A blue print for the Band Base (BB) project
+A blue print for the Band Base (BB) project
 
 Version 1.0
 
@@ -120,7 +120,7 @@ Scheme:
 In this page, a user can add or delete one person as his buddy. The page displays all friends and bands played with.
 Slides and PHP files:
 Slide 8
-Coding suggestions:
+Coding suggestions: Simple way to create the buddy list: We need a buddy table with fields user_id and friend_id. Second field is a foreign key of another user_id or a band_id. Now we can connect bands with users and users with users. We also need a buddylist.php for sending sql requests to the database and provide the data to the buddylist - website (probably buddylist.js). To add or delete a buddy to your list we could have a makebuddy.php which receives a id as parameter and add a new record to the buddy table (f.e. : http://bandbase.com/makebuddy.php?buddyid=$buddyid). We could add a "add buddy" button to the profile page and when clicking on it, the current userid of this profile will be send to the make buddy.php file.
 Contributors: Junge, Tino 
 A user’s messages management page:
 Scheme:
@@ -205,12 +205,3 @@ Slides and PHP files:
 Coding suggestions:
 Contributors:
 Movitz, Alex
-
-
-
-
-
-
-
-
-
