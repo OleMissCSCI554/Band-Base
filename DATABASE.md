@@ -12,7 +12,7 @@ MySQL Password:	csci554
 Permissions:	SELECT
 Permissions:	INSERT
 Permissions:	UPDATE
-Permissions:	DELETE
+Permissions:	DELETE (Only on localhost)
 Availability:	localhost
 Availability:	turing.cs.olemiss.edu
 MySQL Database:	BandBase
@@ -119,7 +119,7 @@ MySQL Password:	csci554
 Permissions:	SELECT
 Permissions:	INSERT
 Permissions:	UPDATE
-Permissions:	DELETE
+Permissions:	DELETE (Only on localhost)
 Availability:	localhost
 Availability:	turing.cs.olemiss.edu
 MySQL Database:	classdemo
