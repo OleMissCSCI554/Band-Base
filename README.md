@@ -173,15 +173,26 @@ Contributors:
 Makanjuola, Funke
 8. Map page:
 Scheme:
-Map options: 
-Events
-Bands
-Musicians
-Map will show the locations of current events, bands or musicians.
-Slides and PHP files:
-Slide 11
+Map options:  Drop down menu with a search button beside it.
+Drop down options:
+          1.	Events
+          2.	Bands
+          3.	Musicians
+Map will show the locations of current events, bands or musicians when search button will be clicked.
+PHP files:
 map.php
 Coding suggestions:
+There should be a table with at least three fields: Address, Type (i.e. events, bands or musicians) and Name 
+(of event, band or musicians).
+
+Address should contain the latitude and longitude values of the location to uniquely identify it.
+If the address is in string format i.e. street address then we will have to use Geocoder to get the latitude and 
+longitude values for the address to plot the location on the map. (having latitude and longitude value in the database 
+table will help).
+Flow: 
+When someone selects an option from the drop down, the php code will look up for the selected type in the database 
+table corresponding to the name field and will retrieve the address values from it. Using those address values, 
+we will plot the location on the map. (we will embed Google map on our web site)
 Contributors: 
 SHARMA, HARSHUL 
 Majumder, Bulbul
