@@ -9,32 +9,41 @@ Yi Huang
 A great reference: http://www.developphp.com/view.php?tid=132
 
 1. Register form:
-Scheme:
-People can register an account on the BB website by providing first name, last name and email address. A user can activate his account by clicking the link in the email sent by the BB website. This makes sure accounts are created by humans. After the user activated his account, he will be redirected to the bio page (Slide 4), where the user can upload his photo and bio and he can also check what instrument he plays. Here another form (createBio.php) is used to record users’ information.
-More possible fields for the form of createBio.php:
-Location, instruments played, skill level, gender and genre
-Slides and PHP files:
-Slide 3  register.php
-Slide ? (a universal slide)  msgToUser.php
-Slide 4 createBio.php
-Coding suggestions:
-a. HTML table and form may be used here.
-b. Users’ input need to be evaluated either by PHP or Javascript code. For example, no user can use the same email address to register two accounts.
-c. PHP functions: stripslashes() and strip_tag() may be used to prevent hackers.
-d. Mysql_real_escape_string may be used to stop SQL injection attack.
-e. PHP mail function may be used to send an activation email.
-f. msgToUser.php may be the webpage you go after a user register an account.
-g. An email activation field may be added to the musician table
-h. Public mysql_connection.php is needed.
-i. And more…
 
-Contributors:  
-a. register.php  Lee, Giwoo  
-b. msgToUser.php Lee, Giwoo 
-c. createBio.php Lee, Giwoo 
-d. my_sql_connect.php Carlisle, Joseph 
-e. header.php Alabi, Adebanke 
-          f. footer.php Alabi, Adebanke 
+Scheme:
+
+People can register an account on the BB website by providing first name, last name and email address. A user can activate his account by clicking the link in the email sent by the BB website. This makes sure accounts are created by humans. After the user activated his account, he will be redirected to the bio page (Slide 4), where the user can upload his photo and bio and he can also check what instrument he plays. Here another form (createBio.php) is used to record users’ information.
+
+More possible fields for the form of createBio.php:
+
+Location, instruments played, skill level, gender and genre
+
+Slides and PHP files:
+
+* Slide 3  register.php
+* Slide ? (a universal slide)  msgToUser.php
+* Slide 4 createBio.php
+
+Coding suggestions:
+
+* HTML table and form may be used here.
+* User's input need to be evaluated either by PHP or Javascript code. For example, no user can use the same email address to register two accounts.
+* PHP functions: stripslashes() and strip_tag() may be used to prevent hackers.
+* Mysql_real_escape_string may be used to stop SQL injection attack.
+* PHP mail function may be used to send an activation email.
+* msgToUser.php may be the webpage you go after a user register an account.
+* An email activation field may be added to the musician table
+* Public mysql_connection.php is needed.
+* And more
+
+Contributors:
+
+* register.php Lee, Giwoo
+* msgToUser.php Lee, Giwoo
+* createBio.php Lee, Giwoo
+* my_sql_connect.php Carlisle, Joseph
+* header.php Alabi, Adebanke
+* footer.php Alabi, Adebanke
 
 2. Login and logout system-header and footer:
 Scheme:
