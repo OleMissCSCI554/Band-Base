@@ -8,9 +8,9 @@ Yi Huang
 
 A great reference: http://www.developphp.com/view.php?tid=132
 
-1. Register form:
+## Register form:
 
-Scheme:
+### Scheme:
 
 People can register an account on the BB website by providing first name, last name and email address. A user can activate his account by clicking the link in the email sent by the BB website. This makes sure accounts are created by humans. After the user activated his account, he will be redirected to the bio page (Slide 4), where the user can upload his photo and bio and he can also check what instrument he plays. Here another form (createBio.php) is used to record users’ information.
 
@@ -18,13 +18,13 @@ More possible fields for the form of createBio.php:
 
 Location, instruments played, skill level, gender and genre
 
-Slides and PHP files:
+### Slides and PHP files:
 
 * Slide 3  register.php
 * Slide ? (a universal slide)  msgToUser.php
 * Slide 4 createBio.php
 
-Coding suggestions:
+### Coding suggestions:
 
 * HTML table and form may be used here.
 * User's input need to be evaluated either by PHP or Javascript code. For example, no user can use the same email address to register two accounts.
@@ -36,7 +36,7 @@ Coding suggestions:
 * Public mysql_connection.php is needed.
 * And more
 
-Contributors:
+### Contributors:
 
 * register.php Lee, Giwoo
 * msgToUser.php Lee, Giwoo
