@@ -328,9 +328,9 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 * Map options:  Drop down menu with a search button beside it.
 * Drop down options:
-          1.	Events
-          2.	Bands
-          3.	Musicians
+   * Events
+   * Bands
+   * Musicians
 * Map will show the locations of current events, bands or musicians when search button will be clicked.
 
 ### PHP files
