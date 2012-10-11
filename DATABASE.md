@@ -38,27 +38,27 @@ Musician
 	Pictures : text
 Video
 	UID : int(10) unsigned zerofill
-	Musician : int(10) unsigned zerofill
+	Musician : int(10) unsigned zerofill : Musician.UID
 	Title : text
 	Flv : text
 Audio
 	UID : int(10) unsigned zerofill
-	Musician : int(10) unsigned zerofill
+	Musician : int(10) unsigned zerofill : Musician.UID
 	Title : text
 	MP3 : blob
 Poster
 	UID : int(10) unsigned zerofill
-	Musician : int(10) unsigned zerofill
-	Band : text
+	Musician : int(10) unsigned zerofill : Musician.UID
+	Band : int(10) unsigned zerofill : Band.UID
 	Image : blob
 Instruments
 	UID : int(10) unsigned zerofill
-	Musician : int(10) unsigned zerofill
+	Musician : int(10) unsigned zerofill : Musician.UID
 	Instrument : text
 	Skill_Level : text
 MusicStyle
 	UID : int(10) unsigned zerofill
-	Musician : int(10) unsigned zerofill
+	Musician : int(10) unsigned zerofill : Musician.UID
 	Style : text
 	Influence1 : text
 	Influence2 : text
@@ -66,6 +66,7 @@ MusicStyle
 	Influence4 : text
 Band
 	UID : int(10) unsigned zerofill
+	Band_Name : text
 	Manager : text
 	Rating : text
 	Style_Type : text
