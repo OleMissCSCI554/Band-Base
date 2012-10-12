@@ -175,6 +175,11 @@ tr .band_videos_small {
     text-align:right;
     font-weight:bold;
 }
+
+.band-videos {
+    width:950px;
+    height:350px;
+}
 </style>
   <link rel='stylesheet' type='text/css' href='../static/css/bbplayer.css' />
   <script type='text/javascript' src='../static/js/vendor/jquery-1.8.0.min.js'></script>
