@@ -1,3 +1,18 @@
+<?php
+  ## Utility function to render DOM for $.tubeplayer/$.tools.scrollable integration
+  ## @param $ytid video id of a youtube video
+  function addVideoScrollableItem($ytid) {
+    $ret = "";
+    $ret = $ret . "<div>\n";
+    $ret = $ret . "  <a href=\"javascript:void(0)\" onClick=\"\$('#bbplayer-video').tubeplayer('play', '$ytid')\">\n";
+    $ret = $ret . "    <img src=\"http://img.youtube.com/vi/$ytid/default.jpg\" />\n";
+    $ret = $ret . "  </a>\n";
+    $ret = $ret . "</div>\n";
+
+    echo($ret);
+  }
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -161,6 +176,11 @@ tr .band_videos_small {
     font-weight:bold;
 }
 </style>
+  <link rel='stylesheet' type='text/css' href='../static/css/bbplayer.css' />
+  <script type='text/javascript' src='../static/js/vendor/jquery-1.8.0.min.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/jquery.tools-wepanlen.min.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/jquery.tubeplayer.js'></script>
+  <script type='text/javascript' src='../static/js/vendor/swfobject.min.js'></script>
 </head>
 <body>
 <div class="header">
@@ -223,28 +243,51 @@ tr .band_videos_small {
   </tr>
 </table>
 </div>
-<div class="band_videos">
-<div class="band_videos_table1">
-<table  width="950" height="460">
-  <tr>
-    <td width="217" height="454" class="band_videos_name" >VIDEOS</td>
-    <td class="band_videos_1"width="400"><img class="big_video" src="" /></td>
-    <td class="band_videos_intro"width="317">Sed sollicitudin velit non ipsum mollis in euismod libero laoreet. Duis   velit nibh, placerat id lobortis nec, facilisis sit amet diam.   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere   cubilia Curae; In turpis dui, laoreet at placerat et, tincidunt aliquet   justo. Mauris pharetra pharetra sem, vitae commodo sem laoreet sed.   </td>
-  </tr>
-</table>
-</div>
-<div class="band_videos_table2" >
-<table width="950">
-  <tr>
-    <td class="band_videos_arrow"><img src="arrow.png"  /></td>
-    <td class="band_videos_small" ><img class="band_videos_small_img" src="" /></td>
-    <td class="band_videos_small"><img class="band_videos_small_img"src=""  /></td>
-    <td class="band_videos_small"><img class="band_videos_small_img" src=""  /></td>
-    <td class="band_videos_small"><img class="band_videos_small_img"src="" /></td>
-    <td class="band_videos_small"><img class="band_videos_small_img" src="" /></td>
-  </tr>
-</table>
-</div>
+<div class="band-videos">
+  <!-- bandbase video player -->
+  <div id='bbplayer'>
+    <div id='bbplayer-content'>
+      <div id='bbplayer-title'>Videos</div>
+      <div id='bbplayer-video'></div>
+      <div id='bbplayer-description'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+           tristique velit vitae velit accumsan eu viverra nulla ultrices. Sed
+           congue augue eu lacus bibendum cursus. Praesent ut nulla quam,
+           eget hendrerit nulla. Integer ac enim vel dui hendrerit sagittis nec at
+           lectus. Ut volutpat sagittis lacus, sed dictum felis ultricies eu.
+        </p>
+      </div>
+    </div>
+
+    <!-- control ribbon -->
+    <div id='bbplayer-controlribbon'>
+      <a class='prev'></a>
+
+      <div id='bbplayer-select'>
+        <div class='videos'>
+<?php
+    addVideoScrollableItem("9bZkp7q19f0");
+    addVideoScrollableItem("YJVmu6yttiw");
+    addVideoScrollableItem("Sv6dMFF_yts");
+    addVideoScrollableItem("HPPF9eO5_6U");
+    addVideoScrollableItem("N9vn6I17yWw");
+    addVideoScrollableItem("dGghkjpNCQ8");
+    addVideoScrollableItem("EkHTsc9PU2A");
+    addVideoScrollableItem("XFkzRNyygfk");
+    addVideoScrollableItem("yzC4hFK5P3g");
+    addVideoScrollableItem("jRx5PrAlUdY");
+    addVideoScrollableItem("J_DV9b0x7v4");
+    addVideoScrollableItem("KMU0tzLwhbE");
+    addVideoScrollableItem("AV4smtJrIOM");
+    addVideoScrollableItem("FGBhQbmPwH8");
+    addVideoScrollableItem("zHU2RlSCdxU");
+?>
+        </div>
+      </div>
+
+      <a class='next'></a>
+    </div>
+  </div>
 </div>
 <div class="footer">
 <table width="950">
@@ -255,5 +298,23 @@ tr .band_videos_small {
   </tr>
 </table>
 </div>
+  <script type='text/javascript'>
+    /*global $, document*/
+    $(document).ready(function () {
+        "use strict";
+
+        $("#bbplayer-video").tubeplayer({
+            width: 425,
+            height: 225,
+            initialVideo: "9bZkp7q19f0",
+            showControls: false,
+            annotations: false
+        });
+
+        $("#bbplayer-select").scrollable({
+            size: 5
+        });
+    });
+  </script>
 </body>
 </html>
