@@ -3,12 +3,9 @@
 
     /* Attach the widget to the bottom of the screen */
     position:absolute;
-    bottom:0px;
 
     /* Hack center absolute positioned divs horizontally */
     width:850px;
-    left:50%;
-    margin-left:-425px;
 }
 
 #bbplayer #bbplayer-content #bbplayer-title {
