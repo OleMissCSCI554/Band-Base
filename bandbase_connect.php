@@ -6,6 +6,6 @@
    DEFINE ('database','BandBase');
    
    $dbc = @mysqli_connect(host, username, password, database) or 
-die('Could not connectto MySQL: ' . mysqli_connect_error());
+die('Could not connect to MySQL: ' . mysqli_connect_error());
    
 ?>
