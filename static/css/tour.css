@@ -8,6 +8,11 @@ header h1 {
 	padding: 1em;
 }
 
+h2 {
+	color: white;
+	font-size: 2.5em;
+}
+
 .carousel-image {
 	width: 950px;
 	height: 450px;
@@ -15,4 +20,8 @@ header h1 {
 
 footer {
 	color: white;
+}
+
+.container .main {
+	width: 1000px;
 }
