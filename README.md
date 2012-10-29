@@ -1,8 +1,8 @@
-A blue print for the Band Base (BB) project
+A Blue Print for the Band Base (BB) Project
 
-Version 1.0
+Version 3.0
 
-09/25/2012
+10/26/2012
 
 Yi Huang
 
@@ -12,16 +12,27 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Scheme
 
-* People can register an account on the BB website by providing first name, last name and email address.
-* A user can activate his account by clicking the link in the email sent by the BB website. This makes sure accounts are created by humans.
-* After the user activated his account, he will be redirected to the bio page (Slide 4).
-* The user can upload his photo and bio on the bio page.
-* The user can check what instrument he plays on the bio page.
-* Another form (createBio.php) is used to record users’ information.
+* People can register an account on the BandBase website by providing his first name, last name and email address.
+* A user can activate his account by clicking the link in the email sent by the BandBase website. This makes sure the accounts are created by humans.
+* After the user activates his account, he will be redirected to the biograph page (Slide 4).
+* The user can upload his photos, videos and biograph on the biograph page.
+* Another HTML form (in createBio.php) is used to upload the user information, video, audio and poster. This form includes at least: 
+	Nick_Name, 
+	DOB, 
+	Email_Address, 
+	Phone_Nmber, 
+	Street_Address1, 
+	Street_Address2, 
+	City, 
+	State, 
+	Zip, 
+	Videos, 
+	Audio, 
+	Pictures.
 
 ### More possible fields for the form of createBio.php
 
-* Location
+* music style
 * instruments played
 * skill level
 * gender
@@ -42,23 +53,20 @@ A great reference: http://www.developphp.com/view.php?tid=132
 * PHP mail function may be used to send an activation email.
 * msgToUser.php may be the webpage you go after a user register an account.
 * An email activation field may be added to the musician table
-* Public mysql_connection.php is needed.
+* Public mysql_connection.php is ready to use.
+* Some sample code is available here: http://www.developphp.com/view.php?tid=132
 * And more
 
 ### Contributors
 
-* register.php Lee, Giwoo
-* msgToUser.php Lee, Giwoo
-* createBio.php Lee, Giwoo
-* my_sql_connect.php Carlisle, Joseph
-* header.php Alabi, Adebanke
-* footer.php Alabi, Adebanke
+* Lee, Giwoo
+
 
 ## Login and logout system-header and footer
 
 ### Scheme
 
-* A user can log in to his account by offering his email address and password. When a user clicks a login link in headers, he will be redirected to the login page (Slide 1).
+* A user can log in to his account by providing a correct email address and password pair. When a user clicks a login link in headers, he will be redirected to the login page (Slide 1).
 * A user can log out his account by clicking the embedded link in the footer. The user might be redirect to the homepage.
 
 ### Slides and PHP files
@@ -73,18 +81,15 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Contributors
 
-* login.php Alabi, Adebanke 
-* logout.php Alabi, Adebanke 
-* header.php Alabi, Adebanke 
-* footer.php Alabi, Adebanke 
+* Alabi, Adebanke 
 
 ## Index page and system administration page
 
 ### Scheme
 
-* The index page is a face of a website.
+* The index page is the face of a website.
 * There is a photo gallery in the middle of the index page.
-* After a user click “more” links, the corresponding page will show up.
+* After a user clicks “more” links, the corresponding page will show up or be expanded.
 * After a user clicks a search link, he will be redirected to the corresponding search page.
 * The content of the blog will be populated from the system administrator’s blog.
 
@@ -103,15 +108,15 @@ A great reference: http://www.developphp.com/view.php?tid=132
 * Javascript for the photo gallery
 
 ### Contributors
-* index.php Jason Boyd
-* header.php Alabi, Adebanke 
-* searchGenre.php, searchPop.php Makanjuola, Funke
+* Jason Boyd
+
 
 ## System administration page
 
 ### Scheme
 
-* Dashboard: Once a system administrator log in his account, he can view new users, new events and write his blog. The corresponding pages will be displayed when the system administrator log clicks any of these three links.
+* Dashboard: Once a system administrator has logged in his account: he can view new users by clicking the new users link; 
+	He can view new events by clicking the new events link; He can also write his blog in this page.
 * Rating: ?
 * Artist of the week: the administrator can choose the artist of the week.
 * Messages: (list out the two newest messages?)
@@ -137,10 +142,10 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Scheme
 
-* Everyone from internet can view this page.
-* The page presents a musician’s interests, locations and self-description.
-* The page also lists all videos of the musician.
-* One video is focused with descriptions in the middle of the page.
+* Everyone from the internet can view this page.
+* The page presents the interests, the location and the self-description of a musician.
+* The page also lists some videos of the musician.
+* In the middle of the page, we focus on one video with a caption.
 
 ### Slides and PHP files
 * Slide 6
@@ -155,11 +160,11 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Scheme
 
-* The page can be viewed by all people from internet.
-* It includes a band name, photo, self-description and rating.
+* The page can be viewed by all people from the internet.
+* It includes a band name, photos, an introduction and a rating.
 * If a user has logged in his account, he will be redirected to message management page if he clicks “message us”.
 * Otherwise, he will be redirected to the login page.
-* A list of band videos will be shown in the middle of the page.
+* A gallery of band videos will be shown in the middle of the page.
 * One of the videos will be focused on.
 * The focused video has an introduction.
 * All videos are from youtube.com.
@@ -174,32 +179,13 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 * Deuchler, Philip
 
-## A user’s administration page
+
+
+## A user’s buddy management and buddy list page
 
 ### Scheme
 
-* Dashboard: ?
-* Pages: ?
-* Bands: list all bands.
-* Message: go to the message management page.
-* Events: go to the event management page.
-* Buddy: go to the buddy management page.
-
-### Slides and PHP files
-
-* A slide is similar to the Band Base administration slide and more
-
-### Coding suggestions
-
-### Contributors
-
-* Zhao, Xiaowei
-
-## A user’s buddy management and buddy List page
-
-### Scheme
-
-* In this page, a user can add or delete one person as his buddy. The page displays all friends and bands played with.
+* In this page, a user can add or delete one person as his buddy. The page displays all friends and bands the musician played with.
 
 ### Slides and PHP files
 
@@ -207,10 +193,10 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Coding suggestions
 
-* We need a buddy table with fields user_id and friend_id.
-* Second field is a foreign key of another user_id or a band_id.
-* Now we can connect bands with users and users with users.
-* We also need a buddylist.php for sending sql requests to the database and provide the data to the buddylist - website (probably buddylist.js).
+* We need a buddy table with fields user_UID and friend_UID.
+* The second and third fields are foreign keys of musician and band tables.
+* In this way, we can refer from musicians to their friends and musicians to their bands.
+* We also need a buddylist.php for sending sql requests to the database and providing the data to the buddylist - website (probably buddylist.js).
 * To add or delete a buddy to your list we could have a makebuddy.php which receives a id as parameter and add a new record to the buddy table (f.e. : http://bandbase.com/makebuddy.php?buddyid=$buddyid).
 * We could add a "add buddy" button to the profile page and when clicking on it, the current userid of this profile will be send to the make buddy.php file.
 
@@ -222,11 +208,11 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Scheme
 
-* In this page, two kinds of message will be presented. One is personal message. The other is band message.
-* The user can read and reply the message.
-* The user also can write new message.
+* In this page, two kinds of message will be presented: personal and band messages.
+* The user can read and reply the messages.
+* The user also can write new messages.
 * The receiver of a message could be a musician or a band.
-* He can also send message to members of a band.
+* He can also send messages to one musician or members of a band.
 
 ### Slides and PHP files
 
@@ -236,14 +222,15 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Contributors
 
-* Zhao, Xiaowei
+* Becker, Michelle
 
 ## A user’s event management page (needed)
 
 ### Scheme
 
 * An owner of a band can create and delete an event.
-* The page also displays all events created by the user.
+* The page also displays the newest events.
+
 
 ### Slides and PHP files
 
@@ -275,13 +262,13 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Scheme
 
-* A musician can create a band. This is kind of registration form for a band.
+* A musician can create a new band. This is kind of a registration form for a band.
 * The form fields include a “name”, “add member” and “about” field.
 * The owner of the band can upload videos and photos for a band.
 * The musician can add more than one band members.
-* The photos of the band will be adjusted to suitable size.
+* The photos of the band will be adjusted to a suitable size.
 * The actual videos are not uploaded.
-* The owner only needs to upload a you tube link.
+* The owner only needs to upload a YouTube video unique ID.
 
 ### Possible fields for the form
 
@@ -300,6 +287,14 @@ A great reference: http://www.developphp.com/view.php?tid=132
 ## Search page
 
 ### Scheme
+* A form that specify action and method will be required.
+* Four dropdown/select box will be required with their respective option values. We need a search button to query BandBase MySQL database to search; 
+* (1) Instruments table by Instrument type 
+* (2) Instruments table by Skill Level
+* (3) Musician table by Location 
+* (4) Musician table by Gender
+* We define a php script that uses the variables selected by the user as POST variables . MySQL search query in the php script will use the POST variables to search BandBase database .
+ Then echo the output to show the links of all corresponding homepage of musicians on the search page.
 
 ### Search options
 
@@ -352,37 +347,33 @@ table corresponding to the name field and will retrieve the address values from 
 ### Contributors
 
 * Sharma, Harshul
-* Majumder, Bulbul
 
-## Universal css
+
+## Base Band Contact
 
 ### Scheme
 
-* All css files needed by the website
+* Implement Base Band Contact slide. The administrator of the website can view the messages sent from this page.
 
 ### Slides and PHP files
+
+* Base Band Contact slide
 
 ### Coding suggestions
 
 ### Contributors
-
-* Becker, Michelle
+* Majumder, Bulbul
 
 ## Database
 
 ### Scheme
 
-* location
-* instruments played
-* skill level
-* gender
-* genre
-* is_activated
-* and more
+* The buddylist table.
 
 ### Slides and PHP files
 
 ### Coding suggestions
+* We need an account status column in musician table. This field indicates if an account is active, pending or deleted.
 
 ### Contributors
 
