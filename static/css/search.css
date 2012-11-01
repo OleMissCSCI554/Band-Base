@@ -1,0 +1,63 @@
+body {
+	width:100%;
+	margin: 0;
+	padding: 0; 
+	background: transparent;
+
+}
+#div1{background-color:#FFFFFF;}
+
+#div3{ font-size:2.5em;
+font-family:Arial, Helvetica, sans-serif;}
+	
+.box3{
+	float: left;
+	  width:94%;
+	  height:800px;	  
+	  border-right: #b1baa6 solid 42px;
+	  border-left: #b1baa6 solid 42px;
+	  margin:0;
+    
+}
+#submit_B{
+		width: 80px;
+		font-size:14px;
+		
+	}
+
+ #div4 { float:left; 
+    font-size:14px;
+	width:58%;
+	height:253px;
+	margin-left: 250px;
+	margin-right: 250px;
+	margin-top:5px;
+	background-color: #b1baa6;
+	border-radius:25px;
+}
+#div5 { float:left; 
+    font-size:14px;
+	width:58%;
+	height:23px;
+	margin-left: 250px;
+	margin-right: 250px;
+	margin-top:5px;
+	
+}
+#div6 { float:left; 
+    font-size:14px;
+	width:100%;
+	height:23px;
+	margin-top:5px;
+	
+}
+
+.selectoption{ width:30%;
+
+}
+h1{
+		font-family: sans-serif;
+		font-size: 60px;
+		text-align: center;
+		
+	}
