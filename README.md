@@ -1,8 +1,8 @@
 A Blue Print for the Band Base (BB) Project
 
-Version 3.0
+Version 3.1
 
-10/26/2012
+10/30/2012
 
 Yi Huang
 
@@ -224,7 +224,7 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 * Becker, Michelle
 
-## A user’s event management page (needed)
+## A user’s events management page (needed)
 
 ### Scheme
 
@@ -256,7 +256,34 @@ A great reference: http://www.developphp.com/view.php?tid=132
 
 ### Contributors
 
-* Gui, Tian
+* Hunt, Bryan
+
+## The user administration page
+
+### Scheme
+
+* A musician can edit his/her personal and muisc information.
+* A musician can upload his/her video list.
+* A musician can send out messages.
+* A musician can upload his/her photos.
+* A musician can write "about".
+* A musician can view his bands.
+* A musician can view his buddies.
+* And more.
+
+### Slides and PHP files
+
+* Slide: [the link] (http://pix.cs.olemiss.edu/csci554/useradmin.pdf)
+
+### Coding suggestions
+
+* When a musician wants to edit something, for example, messages, 
+	He can be redirected to the corresponding message management pages.
+
+### Contributors
+
+* Carlisle, Joseph
+
 
 ## A user’s band creation page
 
