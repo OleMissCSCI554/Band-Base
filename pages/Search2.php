@@ -67,7 +67,7 @@
 						
 							
 										}
-										
+					mysqli_close($dbc);					
 										
 				}
 			?>

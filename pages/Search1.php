@@ -16,7 +16,7 @@
   
 				array_pop ( $array );  
   
-				
+				mysqli_close($dbc);
 
 				?>
 <html xmlns="http://www.w3.org/1999/xhtml">
