@@ -15,10 +15,10 @@ table{
 }
 
 .index-logo{
-	height:45px;
+	height:68px;
 	width:47.5%;
 	text-align:center;
 	background-image:url('../img/index-logo.png');
 	background-repeat:no-repeat;
-	background-position:169px -30px;
+	background-position:center;
 }
