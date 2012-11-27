@@ -8,9 +8,12 @@ table{
 	width:100%;
 	font-size:18px;
 	font-weight:bold;
+   border: 0px;
+   border-collapse:collapse;
 }
 
 .menu-data{
+	padding-top:100px;
 	padding-right:15%;
 }
 
@@ -20,5 +23,19 @@ table{
 	text-align:center;
 	background-image:url('../img/index-logo.png');
 	background-repeat:no-repeat;
-	background-position:169px -30px;
+	background-position:169px 60px;
+}
+
+.sign-in-up{
+	float:right;
+   padding-right:36.5%;
+}
+
+.image-panel{
+	text-align:center;
+	vertical-align:bottom;
+	float:bottom;
+	height:385px;
+	background-image:url('../img/artist1.png');
+	background-repeat:no-repeat;
 }
