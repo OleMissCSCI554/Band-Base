@@ -75,3 +75,10 @@ body {
         padding: 5px;
         font: 0.5em "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+
+#info {
+	width:100%;
+	text-align:center;
+    margin: 30px 20px 30px 20px;
+    padding: 30px 20px 30px 20px;
+}

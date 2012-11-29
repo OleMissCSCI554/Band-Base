@@ -33,6 +33,12 @@ $userinfo3=mysql_fetch_array($userinfo2);
 				<input type="text" name="add">
 				<input type="submit" name="submit" value="Add">
                 </form>
+				<br/><br/>
+                <form name="message" action="makebuddy.php" method="post">
+                Delete Friend (Enter first name): <br/> 
+				<input type="text" name="delete">
+				<input type="submit" name="submit" value="Delete">
+                </form>
         </div>
 <div>
 <div style="clear: both;"></div>
